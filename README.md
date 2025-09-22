@@ -1,9 +1,9 @@
 <h1 align="center">Go Coverage Report</h1>
 <p align="center">A CLI tool and GitHub Action to post Go code coverage reports as comment to your pull requests.</p>
 <p align="center">
-    <a href="https://github.com/fgrosse/go-coverage-report/releases"><img src="https://img.shields.io/github/tag/fgrosse/go-coverage-report.svg?label=version&color=brightgreen"></a>
-    <a href="https://github.com/fgrosse/go-coverage-report/actions/workflows/ci.yml"><img src="https://github.com/fgrosse/go-coverage-report/actions/workflows/ci.yml/badge.svg"></a>
-    <a href="https://github.com/fgrosse/go-coverage-report/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-BSD--3--Clause-blue.svg"></a>
+  <a href="https://github.com/LanderK-Bondaval/go-coverage-report/releases"><img src="https://img.shields.io/github/tag/LanderK-Bondaval/go-coverage-report.svg?label=version&color=brightgreen"></a>
+  <a href="https://github.com/LanderK-Bondaval/go-coverage-report/actions/workflows/ci.yml"><img src="https://github.com/LanderK-Bondaval/go-coverage-report/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/LanderK-Bondaval/go-coverage-report/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-BSD--3--Clause-blue.svg"></a>
 </p>
 
 --- 
@@ -101,7 +101,7 @@ jobs:
       actions:       read  # to download code coverage results from "test" job
       pull-requests: write # write permission needed to comment on PR
     steps:
-      - uses: fgrosse/go-coverage-report@v1.1.1 # Consider using a Git revision for maximum security
+  - uses: LanderK-Bondaval/go-coverage-report@v1.1.1 # Consider using a Git revision for maximum security
         with:
           coverage-artifact-name: "code-coverage" # can be omitted if you used this default value
           coverage-file-name: "coverage.txt" # can be omitted if you used this default value
@@ -208,7 +208,7 @@ A list of all available versions can be found at the [releases page][releases].
 
 This project is licensed under the BSD-3-Clause License - see the [LICENSE](LICENSE) file for details.
 
-[releases]: https://github.com/fgrosse/go-coverage-report/release
-[contributors]: https://github.com/fgrosse/go-coverage-report/contributors
+[releases]: https://github.com/LanderK-Bondaval/go-coverage-report/release
+[contributors]: https://github.com/LanderK-Bondaval/go-coverage-report/contributors
 [built-with]: go.mod
 [upload-artifacts-issues]: https://github.com/cli/cli/issues/5625#issuecomment-1857787634
